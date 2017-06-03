@@ -100,6 +100,16 @@
   padding: 10px 40px;
   font-size: 120px;
 }
+.slide p.center {
+  text-align: center;
+}
+.slide p.center img {
+  max-width: 100%;
+}
+.slide.white p,
+.slide.white ul {
+  color: #fff;
+}
 blockquote {
   font-size: 40px;
 }
