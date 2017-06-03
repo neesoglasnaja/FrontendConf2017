@@ -4,7 +4,11 @@ important-color = #a11212
 .slide::after
 	background main-color
 	height 75px
-	border-radius 0 0 10px 10px
+.slide::before
+	position absolute
+	top: 75px;
+	right: 100px;
+	height 50px
 .slide
 	h2
 		color main-color
@@ -81,6 +85,13 @@ important-color = #a11212
 				padding-top 20px
 				padding-bottom 20px
 				font-size 120px
+	h2 .label
+		color #FFF
+		padding 10px 40px
+		font-size 120px
+
+blockquote
+	font-size 40px		
 
 .label
 	background-color main-color
@@ -131,3 +142,4 @@ important-color = #a11212
 	opacity 0.25
 .opacity-0
 	opacity 0
+	

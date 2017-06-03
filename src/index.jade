@@ -20,9 +20,118 @@ html(lang='ru')
     header.caption
       h1 !{title}
     +slide({name: 'cover', header: title, classes:'cover'})
-      p Александра Шинкевич
+      p Александра Шинкевич (
+        a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
+        | )
       +cover('pictures/cover.jpg')
-   
+    +slide({header: "Кто я?", classes: "label-header"})
+      p Описание
+      +cover('pictures/white-cover.jpg')
+    +slide({header: "<span class='label'>x3</span>", shout: true})
+      +cover('pictures/blur-cover.jpg')
+    +slide({header: "Легко ли вам оценивать?", classes: "label-header"})
+      p Картинка
+    +slide({header: "<span class='label'>Время = деньги</span>", shout: true})
+      +cover('pictures/blur-cover.jpg')
+    +slide({header: "Почему еще важно", classes: "label-header"})
+      ul
+        li Продажа клиенту своего проекта
+        li.next Объем работ на проекте должен быть известен и конечен
+        li.next Планирование загрузки разработчиков
+    +slide({header: "Виды оценки", classes: "label-header"})
+      ul
+        li Предварительная оценка
+        li.next Точная оценка
+        li.next Переоценка
+    +slide({header: "Причины ошибок в оценках", classes: "label-header"})
+      ul
+        li Неточные требования или неизвестный набор задач
+        li.next Не учитываются риски
+        li.next Сложно оценить то, чего никогда не делал
+        li.next Люди ошибаются в своих оценках, так как они - люди, а не оракулы
+        li.next Недостаточное понимание ответственности
+        li.next Производительность разработчиков может отличаться разы (джуниор - сениор)
+    +slide({header: "<span class='label'>Как научиться</span>", shout: true, classes: 'cover'})
+      +cover('pictures/blur-cover.jpg')
+    +slide({header: "0. Трекать время", classes: "label-header"})
+      p Логотипы таймеров
+    +slide({header: "1. Уточняйте требования", classes: "label-header"})
+      ul
+        li Не бойтесь задавать вопросы
+        li.next Убедитесь, что все моменты учтены
+        li.next Давайте интервал вместо точной цифры
+    +slide({header: "2. Детализируйте большие задачи", classes: "label-header"})
+      ul
+        li Разбивайте задачу на очевидные подзадачи
+        li.next Думайте над (конкретной) реализацией
+        li.next Не увлекайтесь дроблением
+    +slide({header: "3. Оценивайте командой", classes: "label-header"})
+      ul
+        li Давайте задачи оценку нескольким специалистам
+        li.next Дайте на ревью более опытному разработчику
+        li.next Берите усредненные цифры для неточных оценок
+    +slide({header: "4. Переоценивайте задачи", classes: "label-header"})
+      ul
+        li Подтвержайте заложенную оценку перед началом работы
+        li.next Распишите/обсудите конкретную реализацию задачи
+    +slide({header: "5. Определяйте рисковые задачи", classes: "label-header"})
+      ul
+        li Особо неопределенные задачи - новая технология, внешнее API и т.д.
+        li.next Отдельно выделяйте время на research таких задач
+        li.next Проговаривайте риски с менеджером/клиентом
+        li.next Затем, если возможно, оценивайте/переоценивайте
+    +slide({header: "6. Не забывайте про буфер", classes: "label-header"})
+      ul
+        li Помните, что вы никогда не тратите все 100% рабочего времени на задачу
+        ul.next
+          li Интеграции
+          li Деплой
+          li Коммуникации
+          li Тестирование
+          li Кофе, туалет, проверка почты, общение с коллегами, прокрастинация
+    +slide({header: "7. Проблемы? Не молчите!", classes: "label-header"})
+      ul
+        li Советуйтесь с командой и не бойтесь просить помощи
+        li.next Клиент - тоже человек, его можно переубедить
+    +slide({header: "8. Собирайте статистику", classes: "label-header"})
+      ul
+        li Оценка - это не только то, что будет
+        li.next Анализируйте оцененное и реально затраченное время
+        li.next Проводите "ретро" по переоценным или недооцененным задачам
+        li.next Накапливайте опыт для последующих оценок
+        li.next Учитывайте коэффициент погрешности оценок (реальное / оцененное)
+    +slide({header: "Бонус. Повышение прогнозируемости", classes: "label-header"})
+      ul
+        li Улучшийте комуникацию в команде
+        li.next Как только появилась задержки по срокам - сразу к менеджеру
+        li.next Комбинируйте людей в команды так, чтобы им было комфортно
+        li.next Группируйте людей - по отделам, по проектам
+        li.next Пробуйте различные техники программирования - парное, экстремальное
+    +slide({header: "Хочу больше", classes: "label-header"})
+      ul
+        li 
+          a(href="https://habrahabr.ru/company/ruswizards/blog/151029/" target="_blank") Реальная оценка или почему наступают дедлайны
+          |  (Хабр) 
+        li  
+          a(href="https://dou.ua/lenta/articles/ob-otsenke-vremeni/" target="_blank") Некоторые правила улучшения временнóй оценки задачи
+          |  (статья) 
+        li  
+          a(href="https://www.slideshare.net/VLDCORP/ss-10635744" target="_blank") Оценки имеют значение
+          |  (SlideShare) 
+        li  
+          a(href="https://www.slideshare.net/ExigenServices/ss-26460568" target="_blank") Оценка задач, выполняемых по итеративной разработке
+          |  (SlideShare) 
+        li  
+          a(href="https://habrahabr.ru/post/308494/" target="_blank") Как дать адекватную оценку времени, когда неопределённость бьёт по башке
+          |  (Хабр) 
+    +slide({})
+      figure
+        blockquote 
+          p — Нельзя поверить в невозможное! 
+            br
+            | — Просто у тебя мало опыта
+        figcaption «Алиса в Зазеркалье», Льюис Кэрролл
+
     +slide({name: 'theend', header: "Вопросы?", shout: true, classes: 'cover label-header'})
       p.end-link 
         a.bigger(href="http://bit.ly/fc2017-estimation" target="_blank") bit.ly/fc2017-estimation
