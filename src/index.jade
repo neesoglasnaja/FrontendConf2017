@@ -20,17 +20,18 @@ html(lang='ru')
     header.caption
       h1 !{title}
     +slide({name: 'cover', header: title, classes:'cover'})
-      p Александра Шинкевич
+      p Александра Шинкевич (
+        a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
+        | )
       +cover('pictures/cover.jpg')
     +slide({header: "Кто я?", classes: "label-header white"})
-      p 
-        a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
       ul 
         li Глава отдела фронтенда LOVATA
         li Фуллстек-разработчик (MEAN)
+        li Участвую в организации MinskCSS и MinskJS
       p
-        img.logo(src="pictures/minskcss.jpg")
-        img.logo(src="pictures/minskjs.jpg")
+        img.logo(src="pictures/minskcss.png")
+        img.logo(src="pictures/minskjs.png")
       +cover('pictures/white-cover.jpg')
     +slide({header: "<span class='label'>x3</span>", shout: true})
       +cover('pictures/blur-cover.jpg')
@@ -40,12 +41,12 @@ html(lang='ru')
       +cover('pictures/blur-cover.jpg')
     +slide({header: "Почему еще важно", classes: "label-header"})
       ul
-        li Продать клиенту свое время
+        li.next Продать клиенту свое время
         li.next Объем работ должен быть конечен
         li.next Планирование загрузки разработчиков
     +slide({header: "Виды оценки", classes: "label-header"})
       ul
-        li Предварительная оценка
+        li.next Предварительная оценка
           span.next  — высокоуровневая оценка
         li.next Точная оценка
           span.next  — оценка конкретной задачи
@@ -53,7 +54,7 @@ html(lang='ru')
           span.next  — изменились требования, поменялся разработчик
     +slide({header: "Причины ошибок в оценках", classes: "label-header"})
       ul
-        li Неточные требования или неизвестный набор задач
+        li.next Неточные требования или неизвестный набор задач
         li.next Не учитываются риски
         li.next Сложно оценить то, чего никогда не делал
         li.next Люди ошибаются в своих оценках, так как они - люди, а не оракулы
@@ -62,61 +63,60 @@ html(lang='ru')
     +slide({header: "<span class='label'>Как научиться</span>", shout: true, classes: 'cover'})
       +cover('pictures/blur-cover.jpg')
     +slide({header: "0. Трекать время", classes: "label-header"})
-      ul
+      ul.next
         li
           a(href="https://zapier.com/blog/best-time-tracking-apps/" target="_blank") The 20 Best Time-Tracking Apps
-      p.center
+          |  (статья)
+      p.next.center
         img(src="pictures/toggl.jpg" width="250")
-
-      p
     +slide({header: "1. Уточняйте требования", classes: "label-header"})
       ul
-        li Не бойтесь задавать вопросы
+        li.next Не бойтесь задавать вопросы
         li.next Убедитесь, что все моменты учтены
         li.next Давайте интервал вместо точной цифры
     +slide({header: "2. Детализируйте большие задачи", classes: "label-header"})
       ul
-        li Разбивайте задачу на очевидные подзадачи
+        li.next Разбивайте задачу на очевидные подзадачи
         li.next Думайте над (конкретной) реализацией
         li.next Не увлекайтесь дроблением
     +slide({header: "3. Оценивайте командой", classes: "label-header"})
       ul
-        li Давайте задачи оценку нескольким специалистам
+        li.next Давайте задачи оценку нескольким специалистам
         li.next Дайте на ревью более опытному разработчику
         li.next Берите усредненные цифры для неточных оценок
-    +slide({header: "4. Переоценивайте задачи", classes: "label-header"})
+    +slide({header: "4. Делайте переоценку задач", classes: "label-header"})
       ul
-        li Подтвержайте заложенную оценку перед началом работы
+        li.next Подтвержайте заложенную оценку перед началом работы
         li.next Распишите/обсудите конкретную реализацию задачи
     +slide({header: "5. Определяйте рисковые задачи", classes: "label-header"})
       ul
-        li Особо неопределенные задачи — новая технология, внешнее API и т.д.
+        li.next Особо неопределенные задачи — новая технология, внешнее API и т.д.
         li.next Отдельно выделяйте время на research таких задач
         li.next Проговаривайте риски с менеджером/клиентом
         li.next Затем, если возможно, оценивайте/переоценивайте
     +slide({header: "6. Не забывайте про буфер", classes: "label-header"})
       ul
-        li Помните, что вы никогда не тратите все 100% рабочего времени на задачу
+        li.next Помните, что вы никогда не тратите все 100% рабочего времени на задачу
         ul
           li.next Интеграции
-          li.next Деплой
+          li.next Деплой, git
           li.next Коммуникации
           li.next Тестирование
           li.next Кофе, туалет, проверка почты, общение с коллегами, прокрастинация
     +slide({header: "7. Проблемы? Не молчите!", classes: "label-header"})
       ul
-        li Советуйтесь с командой и не бойтесь просить помощи
+        li.next Советуйтесь с командой и не бойтесь просить помощи
         li.next Клиент — тоже человек, его можно переубедить
     +slide({header: "8. Собирайте статистику", classes: "label-header"})
       ul
-        li Оценка - это не только то, что будет
+        li.next Оценка - это не только то, что будет
         li.next Анализируйте оцененное и реально затраченное время
         li.next Проводите "ретро" по переоценным или недооцененным задачам
         li.next Накапливайте опыт для последующих оценок
         li.next Учитывайте коэффициент погрешности оценок (реальное / оцененное)
     +slide({header: "Бонус. Повышение прогнозируемости", classes: "label-header"})
       ul
-        li Улучшийте комуникацию в команде
+        li.next Улучшайте комуникацию в команде
         li.next Как только появилась задержки по срокам - сразу к менеджеру
         li.next Комбинируйте людей в команды так, чтобы им было комфортно
         li.next Группируйте людей (по отделам, по проектам)
